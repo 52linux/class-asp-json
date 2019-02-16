@@ -1,5 +1,7 @@
 class asp dealing application/json 
 ```
+<!--#include file="jsonObject.class.asp" -->
+
 Dim post : post=BytesToStr(Request.BinaryRead(Request.TotalBytes))
 Set oJSON = New aspJSON
 oJSON.loadJSON(post)
